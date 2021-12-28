@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-1.8.1.min.js"></script>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+    $(document).ready(function () {
+        $('.bxslider').bxSlider({
+            auto: true, 
+            speed: 500,  
+            pause: 5000,  
+            mode: 'horizontal', 
+            autoControls: true, 
+            pager: true, 
+            captions: true, 
+        });
+    });
+    setInterval(function(){
+    	  $(".blinkEle").toggle();
+    	}, 500);
+  </script>
+<style type="text/css">
+	*{box-sizing: border-box;}
+	#container{margin: 0; padding: 0; width: 1980px;}
+	
+	#font{font-family: Cursive;}
+	
+	#menu{background: linear-gradient(to right,  #E57733, white); height: 65px; width: 90%; margin-left: 70px;}
+ 	#menu a {color: black; display: inline-block; 
+			padding:25px; margin-left: 200px; background: linear-gradient(to right,  #6464CD, white); height: 40px; border-radius: 10px;
+			margin-top: 8px; text-decoration: none; text-align: center; line-height:5px;  font-family: fantasy; font-weight: bold;}	 
+	#menu a:hover{-webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05);}
+	
+	
+
+	
+	#side{float:right; padding: 40px; margin-right:230px; margin-top: -50px;}
+	.footer{height: 10%; clear: both; }
+	
+	.content{float:left; width: 1200px; height: 650px; margin-left: 130px; }
+	.tb{float: right; margin-top: -60px; margin-right: 200px;}
+	
+	span{font-size: 55px; font-style: italic;}
+	#article{ margin-left: 1400px; margin-top: 50px; font-size: 20px;}
+	.btn1{position: relative;
+		background-color: #1abc9c;
+		border-radius: 4px;
+		color: #fff;
+		line-height: 15px;
+		-webkit-transition: none;
+		transition: none;
+		box-shadow: 0 3px 0 #0e8c73;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, .3);}
+	.btn1:hover {
+			background-color: #31c8aa;
+			box-shadow: 0 3px 0 #23a188;}
+	.btn1:active {
+		top: 3px;
+		box-shadow: none;}
+		
+	.btn2{position: relative;
+		background-color: #1abc9c;
+		border-radius: 4px;
+		color: #fff;
+		line-height: 15px;
+		-webkit-transition: none;
+		transition: none;
+		box-shadow: 0 3px 0 #0e8c73;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, .3);}
+	.btn2:hover {
+			background-color: #31c8aa;
+			box-shadow: 0 3px 0 #23a188;}
+	.btn2:active {
+		top: 3px;
+		box-shadow: none;};
+</style>
+</head>
+<body>
+	<div id="container">
+		<header id="header" align="center" >
+			
+	<form action="#" method="#"  >
+				<table class="tb">
+					<a href="main2.jsp"><h1 id="font">Special Day<h1> </h1></a>
+					<tr><th><label for="inputtext">ID</label></th><td>
+					<input type="text" id="inputtext" />
+					</td><td align="center"><input type="submit" value="로그인"  class="btn1"><td></td></tr>
+					
+				    <tr><th><label for="password">password</label></th><td> 
+					<input type="password"></td><td align="center">
+					<a href="membership.html"><input type="button" value="회원가입" class="btn2"/></a></td></tr>
+					
+				</table>
+			</form> 
+		</header>
+	
+		 	 <nav id="menu">
+				<a href="photo5.html">사진리뷰</a>
+				<a href="look1.html">데이트룩</a>
+				<a href="review3.html">후기</a>
+				<a href="Customer2.html">고객센터</a>
+				<a href="Map.jsp">데이트검색</a>		
+			</nav>  
+		<br><br>
+	<section>
+		<div class="content">
+	    <ul class="bxslider">
+	        <li><a href="#"><img src="../image/맛집5.png" alt="" title="더블유루프탑"></a></li>
+	        <li><a href="#"><img src="../image/맛집6.png" alt="" title="더몰트하우스 잠실"></a></li>
+	        <li><a href="#"><img src="../image/맛집3.png" alt="" title="연남동와이탑"></a></li>
+	    </ul>
+	    </div>
+	 </section>
+	 <aside id="side"><h1>이번달 사진리뷰 순위</h1></aside>
+
+	 <article id="article">
+		 <br><br>
+		 <span style="color: aqua;" >1.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="blinkEle">디저트배는 따로있어요</strong><br><br>
+		 <span style="color: yellow;">2.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;인생 먹다가는거죠<br><br>
+		 <span style="color: green;">3.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다이어트는 내일부터<br><br>
+		 <span>4.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아프니까 한점더<br><br>
+		 <span>5.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;먹다 갈랍니다<br><br>
+	 </article>
+	 <br><br><br><br>
+	</div>
+	<footer class=footer><hr>
+	
+		<p><strong>(주)Special Day</strong> 123-456 서울시 강남구 삼성동 104-1 Special Day 대표이사: <sup><strong>고현노</strong></sup> 사업자등록번호: 1482-6786 <strong>Copyright &copy: 2021 pjs lecturer</strong></p>
+		
+	</footer>
+</body>
+</html>
